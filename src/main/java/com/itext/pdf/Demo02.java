@@ -15,7 +15,9 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfString;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.lowagie.text.Cell;
 import com.lowagie.text.PageSize;
 
 public class Demo02 {
@@ -97,19 +99,27 @@ public class Demo02 {
 	    Paragraph content = new Paragraph("  兹证明      （身份证号码：        ），于    年   月   日与我公司建立劳动关系并依法订立劳动合同，现任职     。现根据《劳动合同法》第 三十六 条的规定，因 用人单位提出与劳动者协商一致的 原因，于    年   月   日解除劳动合同。我公司已按法律规定支付经济补偿金，并已结清工资、所有假期、办理停保等相关法律手续。双方已经了结所有的劳动权利和义务，双方自愿放弃有关基于劳动关系产生的其它任何经济责任的追究权利。",Font12normal);
 	    content.setSpacingBefore(24f);
 	    content.setFirstLineIndent(24f); // 第一行间隔
+	    content.setLeading(24f); 
 //	    content.setSpacingAfter(100f);
+//	    PdfStringFormat format1 = new PdfStringFormat();//创建PDF字符串格式
+//	    format1.setLineSpacing(50f);//设置行距
+	    
 	    
 	    Paragraph second = new Paragraph("该证明书一式两份，当事人已于该证明书开出当天领取一份。",Font12normal);
+	    second.setSpacingBefore(8f);
 	    second.setFirstLineIndent(24f);
 	    
 	    Paragraph tcsm = new Paragraph("特此证明。",Font12normal);
+	    tcsm.setSpacingBefore(8f);
 	    tcsm.setFirstLineIndent(24f);
 	    
 	    Paragraph company = new Paragraph("雅居乐地产置业有限公司",Font12normal);
+	    company.setSpacingBefore(8f);
 	    company.setAlignment(Element.ALIGN_RIGHT);
 	    company.setSpacingBefore(50f);
 	    
 	    Paragraph time = new Paragraph("二零一  年  月  日",Font12normal);
+	    time.setSpacingBefore(8f);
 	    time.setAlignment(Element.ALIGN_RIGHT);
 	    
 	    document.add(title);
