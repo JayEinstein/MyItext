@@ -19,4 +19,9 @@ public class App
     	d2.生成模板();
     }
     
+    public void justF() {
+    	// http://10.35.9.238:8082/ec-webservice/interface/esealServer
+    	// 
+    }
+    
 }

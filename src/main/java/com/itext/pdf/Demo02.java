@@ -1,11 +1,9 @@
 package com.itext.pdf;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
@@ -15,10 +13,7 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfString;
 import com.itextpdf.text.pdf.PdfWriter;
-import com.lowagie.text.Cell;
-import com.lowagie.text.PageSize;
 
 public class Demo02 {
 
@@ -114,7 +109,7 @@ public class Demo02 {
 	    tcsm.setFirstLineIndent(24f);
 	    
 	    Paragraph company = new Paragraph("雅居乐地产置业有限公司",Font12normal);
-	    company.setSpacingBefore(8f);
+	    company.setSpacingBefore(8f); 
 	    company.setAlignment(Element.ALIGN_RIGHT);
 	    company.setSpacingBefore(50f);
 	    
